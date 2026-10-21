@@ -22,7 +22,7 @@ Repository hochladen). Auf einem neuen Handy holst du alles mit **„Sicherung l
 ## Aufs Handy bringen
 
 1. Unter *Settings → Pages* als Quelle **Deploy from a branch**, Branch `main`, Ordner `/ (root)` wählen.
-2. Nach ein bis zwei Minuten ist die App unter `https://<benutzername>.github.io/finanzplan/` erreichbar.
+2. Nach ein bis zwei Minuten ist die App unter `https://<benutzername>.github.io/Finanzplan/` erreichbar.
 3. Auf dem Handy öffnen:
    - **iPhone (Safari):** Teilen → „Zum Home-Bildschirm"
    - **Android (Chrome):** Menü ⋮ → „App installieren"

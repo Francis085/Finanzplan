@@ -1,0 +1,4 @@
+# Sicherungsdateien mit persönlichen Finanzdaten gehören nie ins Repository
+*.json
+!manifest.webmanifest
+finanzplan-sicherung-*

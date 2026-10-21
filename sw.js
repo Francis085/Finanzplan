@@ -1,5 +1,5 @@
 // Offline-Cache für den Finanzplan. Bei jeder Änderung an den Dateien VERSION erhöhen.
-const VERSION = "finanzplan-v1";
+const VERSION = "finanzplan-v2";
 const DATEIEN = ["./", "./index.html", "./manifest.webmanifest", "./icon.svg", "./icon-192.png", "./icon-512.png"];
 
 self.addEventListener("install", e => {

@@ -836,12 +836,12 @@ tfoot td { font-weight: 700; border-bottom: 0; }
         <form class="inline" data-form="settings">
           <div class="field"><label for="s-name">Dein Vorname</label><input id="s-name" name="name" value="${esc(demo ? "" : S.name)}"></div>
           <div class="field"><label for="s-netto">Netto-Gehalt pro Monat (€)</label><input id="s-netto" name="netto" inputmode="decimal" value="${demo ? "" : S.netto || ""}" required></div>
-          <div class="field"><label for="s-tag">Zahltag (Tag im Monat)</label><input id="s-tag" name="zahltag" type="number" min="1" max="31" value="${demo ? "" : S.zahltag}" required></div>
+          <div class="field"><label for="s-tag">An welchem Tag kommt dein Gehalt?</label><input id="s-tag" name="zahltag" type="number" inputmode="numeric" min="1" max="31" value="${demo ? "" : S.zahltag}" placeholder="z. B. 1 oder 28" required></div>
           <div class="field"><label for="s-spar">Sparbetrag pro Monat (€)</label><input id="s-spar" name="sparbetrag" inputmode="decimal" value="${demo ? "" : S.sparbetrag || ""}" placeholder="0"></div>
           <div class="field"><label for="s-schuld">Teure Schulden gesamt (€)</label><input id="s-schuld" name="schulden" inputmode="decimal" value="${demo ? "" : S.schulden || ""}" placeholder="Dispo, Raten, Kreditkarte"></div>
           <button class="btn primary" type="submit">Speichern</button>
         </form>
-        <p class="hint">Fällt der Zahltag auf einen kürzeren Monat, nimmt die App den letzten Tag des Monats.${S.netto ? ` Empfohlener Sparbetrag zum Start: ${eur0.format(S.netto * .1)} (10 %).` : ""}</p>
+        <p class="hint">Nur die Zahl des Tages eintragen, an dem das Gehalt meist auf deinem Konto ist. Kommt es am 1., trag 1 ein, kommt es am 28., trag 28 ein. Von diesem Tag bis zum nächsten Gehalt rechnet die App dein Budget. Fällt der Zahltag auf einen kürzeren Monat, nimmt die App den letzten Tag des Monats.${S.netto ? ` Empfohlener Sparbetrag zum Start: ${eur0.format(S.netto * .1)} (10 %).` : ""}</p>
       </section>
       <section class="card"><div class="head"><h2>Deine Daten</h2></div>
         <p class="label" style="margin:0 0 12px">Alles, was du einträgst, bleibt nur auf diesem Gerät. Nichts wird ins Internet geschickt, auch nicht an GitHub. Löschst du den Browser-Verlauf oder wechselst du das Handy, sind die Daten weg. Speichere deshalb ab und zu eine Sicherung.</p>
